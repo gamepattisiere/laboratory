@@ -78,6 +78,9 @@ build/
 *.log
 *.scc
 
+*.exe
+*.out
+
 # Visual C++ cache files
 ipch/
 *.aps
