@@ -3,8 +3,13 @@
 #include <iostream>
 #include <random>
 
+
+class Test {
+public:
+	int integer_;
+};
+
 int main()
 {
-	std::mt19937 engine;
-	std::cout << engine.min() << std::endl;
+	Test test;
 }

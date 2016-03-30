@@ -5,14 +5,22 @@
 #include <cstdlib>
 
 
-void out(const char* strings) throw() {
+class ArrayTest {
+
+};
+
+
+void out(const char* strings) {
 	std::cerr << strings << std::endl;
 }
 
 int main() {
-	unsigned char strings[0x100];
+	char strings[0x100] = {};
 	memset(strings, 0, sizeof(strings));
 
 	out(strings);
+	Print();
+
+	ArrayTest test;
 }
 

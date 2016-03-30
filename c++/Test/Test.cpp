@@ -1,35 +1,27 @@
-// ���{��
-
-
+﻿// 日本語
 #include <iostream>
-#include <vector>
-#include <initializer_list>
 
 
-class Base {
-	virtual int GetInt() const throw() = 0;
-};
-
-class Hoge
-	: public Base
-{
+class Test {
 public:
 	int integer_;
-
-	int GetInt() const throw() {
-		return this->integer_;
-	}
-	int GetInt() {
-		return this->integer_;
-	}
-	template<typename T>
-	void Print(const T& value) {
-		std::cerr << value << "\n";
-	}
 };
 
-int main() {
-	Hoge hoge;
-	hoge.integer_;
+
+void func() {
+	int integer_ = 0;
 }
 
+
+int main() {
+	try {
+		// 日本語入力テスト
+		std::cout << "Hello" << std::endl;
+		Test test;
+
+		test.integer_ = 4;
+		std::cout << test.integer_ << std::endl;
+	} catch (...) {
+		std::cerr << "catch some error" << std::endl;
+	}
+}

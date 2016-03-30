@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <ctime>
-#include <windows.h>
+//#include <windows.h>
 #include "weoSystemTimer.h"
 
 
@@ -23,7 +23,6 @@ void printState(SystemTimerState state) {
 		std::cout << "Uninitialize!!!" << std::endl;
 	}
 }
-
 
 
 int main() {
@@ -66,7 +65,7 @@ int main() {
 	while (!flag) {
 		weoResetServerTime(time(NULL));
 		weoUpdaterSystemTimer();
-		Sleep(16);      // 1/60 フレームの待機時間のシミュレート
+		//Sleep(16);      // 1/60 フレームの待機時間のシミュレート
 
 		SystemTimerState state;
 		weoGetTimerStateSystemTimer(TIMERCATEGORY_FORMATION, &state);

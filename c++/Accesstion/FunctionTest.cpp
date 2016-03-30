@@ -21,6 +21,7 @@ public:
 	{
 		this->check1 = 1.0f;
 		this->check2 = 1.0f;
+		this->class
 	}
 
 
