@@ -44,5 +44,6 @@ int main() {
 	} catch (...) {
 		std::cerr << "catch some error" << std::endl;
 	}
+	std::cout << "Hello world!" << std::endl;
 }
 
